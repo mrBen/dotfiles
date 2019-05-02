@@ -11,8 +11,9 @@ if [ $(tty) = "/dev/tty1" ]; then
 	exit 0
 fi
 
-# Set a (not yet) fancy prompt
-PS1='[\u@\h \W]\$ '
+# Set a fancy prompt
+PS1='\n\[\e[32m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\n\$ '
+#PS1='[\u@\h \W]\$ '
 
 # Environment variables
 export VISUAL=vim
