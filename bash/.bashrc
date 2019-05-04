@@ -15,9 +15,10 @@ fi
 PS1='\n\[\e[32m\]\u@\h: \[\e[33m\]\w\[\e[0m\]\n\$ '
 #PS1='[\u@\h \W]\$ '
 
-# Environment variables
-export VISUAL=vim
-export GOPATH=~/Development/go
+# Better UX
+source /usr/share/doc/pkgfile/command-not-found.bash
+shopt -s autocd
+shopt -s checkwinsize
 
 # Alias definitions
 alias ls='ls --color=auto'
