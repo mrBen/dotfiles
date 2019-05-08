@@ -20,6 +20,10 @@ source /usr/share/doc/pkgfile/command-not-found.bash
 shopt -s autocd
 shopt -s checkwinsize
 
+# Environment variables
+export VISUAL=vim
+export GOPATH=~/Development/go
+
 # Alias definitions
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
