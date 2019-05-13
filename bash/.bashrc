@@ -23,6 +23,7 @@ shopt -s checkwinsize
 # Environment variables
 export VISUAL=vim
 export GOPATH=~/Development/go
+export PATH="$PATH:$GOPATH/bin"
 
 # Alias definitions
 alias ls='ls --color=auto'

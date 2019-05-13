@@ -19,11 +19,9 @@ output * bg ~/.config/wallpaper.jpg fill
 # Screens
 output eDP-1 pos 0 1080 res 1920x1080
 output HDMI-A-1 pos 0 0 res 1920x1080
-#output HDMI-A-1 pos 1920 1080 res 1024x768
 # Applications
 default_border none
-gaps outer 15
-gaps inner 15
+gaps inner 25
 smart_gaps on
 
 ### Idle configuration
