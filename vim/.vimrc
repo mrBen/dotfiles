@@ -75,9 +75,3 @@ set number
 
 " Spell checking by default (in english and french).
 set spell spelllang=en,fr
-
-" The only sane setting possible if you don't want indentations of size 8.
-set tabstop=8
-set softtabstop=4
-set shiftwidth=4
-set expandtab
