@@ -205,16 +205,17 @@ bindsym $mod+r mode "resize"
 bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
-    status_command i3status
+    swaybar_command waybar
+    #status_command i3status
 
-    position top
-    font Iosevka Term 12
+    #position top
+    #font Iosevka Term 12
 
-    colors {
-        statusline #c4b7c5
-        background #141021cb
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    #colors {
+    #    statusline #c4b7c5
+    #    background #141021cb
+    #    inactive_workspace #32323200 #32323200 #5c5c5c
+    #}
 }
 
 include /etc/sway/config.d/*

@@ -21,9 +21,10 @@ shopt -s autocd
 shopt -s checkwinsize
 
 # Environment variables
-export VISUAL=vim
 export GOPATH=~/Development/go
-export PATH="$PATH:$GOPATH/bin"
+export npm_config_prefix=~/.node_modules
+export PATH="$PATH:$GOPATH/bin:$HOME/.node_modules/bin"
+export VISUAL=vim
 
 # Alias definitions
 alias ls='ls --color=auto'
