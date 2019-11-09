@@ -4,8 +4,9 @@ alias vialias='$VISUAL ~/.bash_aliases && source ~/.bash_aliases'
 alias bc='bc -l'
 alias dl-album="youtube-dl --ignore-config --output '~/Downloads/%(playlist)s/%(title)s.%(ext)s' --restrict-filename --extract-audio --audio-format opus --audio-quality 0"
 alias dl-audio="youtube-dl --ignore-config --output '~/Downloads/dl-audio/%(title)s.%(ext)s' --restrict-filename --extract-audio --audio-quality 0 --add-metadata https://www.youtube.com/playlist?list=PLNY_glB-l8nVX_XPotAGVFNQumdzkOa05"
+alias emacs='emacs -nw'
 alias films='ls -I "*.srt" ~/Videos/Films/'
-alias wttr='curl --silent http://wttr.in/Pougny | head --lines=7'
+alias wttr='curl --silent http://wttr.in/Grenoble | head --lines=7'
 
 # Functions
 function burn {
