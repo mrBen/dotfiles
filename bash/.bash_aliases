@@ -28,9 +28,9 @@ function embed {
 					mv "$2" ".video~"
 					if [[ "${2##*.}" == "mp4" ]]
 					then
-						ffmpeg -i "$3" -i ".video~" -map 0 -map 1 -c copy -c:s mov_text -metadata:s:s:0 language="$4" "$2"
+						ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -c copy -c:s mov_text -metadata:s:s:0 language="$4" "$2"
 					else
-						ffmpeg -i "$3" -i ".video~" -map 0 -map 1 -c copy -metadata:s:s:0 language="$4" "$2"
+						ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -c copy -metadata:s:s:0 language="$4" "$2"
 					fi
 					rm ".video~"
 					rm "$3"
@@ -41,7 +41,7 @@ function embed {
 
 			thumbnail | thumb | t)
 				mv "$2" ".video~"
-				ffmpeg -i "$3" -i ".video~" -map 0 -map 1 -c copy -disposition:v:0 attached_pic "$2"
+				ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -c copy -disposition:v:0 attached_pic "$2"
 				rm ".video~"
 				if [[ -f "$3" ]]
 				then
