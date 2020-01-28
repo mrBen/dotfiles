@@ -2,6 +2,7 @@ alias vialias='$VISUAL ~/.bash_aliases && source ~/.bash_aliases'
 
 # Aliases
 alias bc='bc -l'
+alias cdgo='cd $GOPATH/src/github.com/mrBen'
 alias dl-album="youtube-dl --ignore-config --output '~/Downloads/%(playlist)s/%(title)s.%(ext)s' --restrict-filename --extract-audio --audio-format opus --audio-quality 0"
 alias dl-audio="youtube-dl --ignore-config --output '~/Downloads/dl-audio/%(title)s.%(ext)s' --restrict-filename --extract-audio --audio-quality 0 --add-metadata https://www.youtube.com/playlist?list=PLNY_glB-l8nVX_XPotAGVFNQumdzkOa05"
 alias emacs='emacs -nw'
@@ -14,7 +15,7 @@ function burn {
 }
 
 function cpfilm {
-	ffmpeg -loglevel quiet -i "$1" -map 0 -c copy -metadata title="$2" -metadata date=$3 "$HOME/Videos/Films/${2//[\<\>:\"\/\\?\*]/_} ($3).${1##*.}"
+	ffmpeg -loglevel quiet -i "$1" -map 0 -map_metadata 0 -c copy -metadata title="$2" -metadata date=$3 "$HOME/Videos/Films/${2//[\<\>:\"\/\\?\*]/_} ($3).${1##*.}"
 }
 
 function embed {
@@ -28,9 +29,9 @@ function embed {
 					mv "$2" ".video~"
 					if [[ "${2##*.}" == "mp4" ]]
 					then
-						ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -c copy -c:s mov_text -metadata:s:s:0 language="$4" "$2"
+						ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -map_metadata 1 -c copy -c:s mov_text -metadata:s:s:0 language="$4" "$2"
 					else
-						ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -c copy -metadata:s:s:0 language="$4" "$2"
+						ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -map_metadata 1 -c copy -metadata:s:s:0 language="$4" "$2"
 					fi
 					rm ".video~"
 					rm "$3"
@@ -41,7 +42,7 @@ function embed {
 
 			thumbnail | thumb | t)
 				mv "$2" ".video~"
-				ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -c copy -disposition:v:0 attached_pic "$2"
+				ffmpeg -loglevel quiet -i "$3" -i ".video~" -map 0 -map 1 -map_metadata 1 -c copy -disposition:v:0 attached_pic "$2"
 				rm ".video~"
 				if [[ -f "$3" ]]
 				then
