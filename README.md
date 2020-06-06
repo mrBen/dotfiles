@@ -1,2 +1,3 @@
 # ~/.*
-This is the configuration that I use on my system, handled with GNU Stow.
+
+mrBen's dotfiles, managed with [`chezmoi`](https://github.com/twpayne/chezmoi).
