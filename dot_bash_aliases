@@ -8,4 +8,5 @@ alias vialias='chezmoi edit ~/.bash_aliases && chezmoi apply && source ~/.bash_a
 
 alias bc='bc --mathlib'
 alias dl-audio="youtube-dl --ignore-config --output '~/Downloads/dl-audio/%(title)s.%(ext)s' --restrict-filename --extract-audio --audio-quality 0 --add-metadata https://www.youtube.com/playlist?list=PLNY_glB-l8nVX_XPotAGVFNQumdzkOa05"
+alias vim=vimx
 alias wttr='curl --silent http://wttr.in/Grenoble | head --lines=7'

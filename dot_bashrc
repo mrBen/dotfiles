@@ -5,9 +5,8 @@
 #                              
 
 # Source global definitions
-if [ -f /etc/bashrc ]
-then
-    . /etc/bashrc
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
 fi
 
 # User specific environment
@@ -17,13 +16,11 @@ then
 fi
 export PATH
 
-export EDITOR=vim
-export VISUAL=vim
-
-export GOPATH="$HOME/Projects/go"
+shopt -s autocd
+set -o noclobber
+shopt -s checkwinsize
 
 # User specific aliases and functions
-if [ -f ~/.bash_aliases ]
-then
-    . ~/.bash_aliases
+if [ -f ~/.bash_aliases ]; then
+	. ~/.bash_aliases
 fi
