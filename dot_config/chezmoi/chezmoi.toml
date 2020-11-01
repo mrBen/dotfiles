@@ -1,0 +1,3 @@
+[merge]
+  command = "vimx"
+  args = "-d"
