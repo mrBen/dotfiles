@@ -9,6 +9,10 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
+# Set a fancy prompt
+. /usr/share/git-core/contrib/completion/git-prompt.sh
+export PS1='[\u@\h \W$(declare -F __git_ps1 &>/dev/null && __git_ps1 " (%s)")]\$ '
+
 # Set options
 shopt -s autocd
 set -o noclobber

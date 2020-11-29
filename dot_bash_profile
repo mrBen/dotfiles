@@ -11,5 +11,5 @@ fi
 
 # User specific environment and startup programs
 export EDITOR=vimx
-export GOPATH="$HOME/Projetcs/go"
+export GOPATH="$HOME/Projects/go"
 export GPG_TTY=$(tty)
