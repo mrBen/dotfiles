@@ -14,3 +14,5 @@ gsettings set org.gnome.settings-daemon.plugins.power power-button-action 'inter
 gsettings set org.gnome.settings-daemon.plugins.power sleep-inactive-ac-type 'nothing'
 localectl set-keymap fr-bepo_afnor
 localectl set-x11-keymap fr,us '' bepo_afnor,
+
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
