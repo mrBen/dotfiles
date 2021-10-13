@@ -1,0 +1,8 @@
+[commit]
+	gpgSign = true
+[init]
+	defaultBranch = main
+[user]
+	name = Benjamin Collet
+	email = benjamin.collet@protonmail.ch
+	signingKey = 7083E9A4B92AA5E0
