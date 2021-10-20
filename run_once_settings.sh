@@ -2,7 +2,7 @@
 
 gsettings set org.gnome.desktop.calendar show-weekdate true
 gsettings set org.gnome.desktop.datetime automatic-timezone true
-gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'fr+bepo_afnor'), ('xkb', 'us')]"
+gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'fr+bepo_afnor')]"
 gsettings set org.gnome.desktop.interface clock-show-weekday true
 gsettings set org.gnome.desktop.privacy old-files-age 3
 gsettings set org.gnome.desktop.privacy remove-old-temp-files true
