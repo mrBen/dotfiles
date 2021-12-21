@@ -17,7 +17,7 @@
   "python.formatting.provider": "black",
   // "python.linting.mypyEnabled": true,
   "python.linting.pydocstyleArgs": [
-    // "--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107" // ignore missing docstrings
+    // "--add-ignore=D1" // ignore missing docstrings
   ],
   "python.linting.pydocstyleEnabled": true,
   "python.linting.pylintArgs": [
