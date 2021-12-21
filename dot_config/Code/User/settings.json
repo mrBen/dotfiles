@@ -1,0 +1,35 @@
+{
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [
+    80
+  ],
+  // "editor.fontFamily": "Cascadia Code PL, Consolas, 'Courier New', monospace",
+  // "editor.fontLigatures": true,
+  // "files.autoGuessEncoding": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.defaultProfile.windows": "Command Prompt",
+  "telemetry.telemetryLevel": "off",
+
+  "git.autofetch": true,
+
+  "python.formatting.provider": "black",
+  // "python.linting.mypyEnabled": true,
+  "python.linting.pydocstyleArgs": [
+    // "--add-ignore=D100,D101,D102,D103,D104,D105,D106,D107" // ignore missing docstrings
+  ],
+  "python.linting.pydocstyleEnabled": true,
+  "python.linting.pylintArgs": [
+    "--disable=C0330,C0326",
+    "--max-line-length=88",
+    // "--variable-rgx=^[a-z][a-z0-9]*((_[a-z0-9]+)*)?$",
+    // "--argument-rgx=^[a-z][a-z0-9]*((_[a-z0-9]+)*)?$"
+  ],
+  "python.linting.pylintEnabled": true,
+
+  "redhat.telemetry.enabled": false,
+
+  "xml.server.vmargs": "-Xmx512m",
+  "xml.symbols.maxItemsComputed": -1
+}
