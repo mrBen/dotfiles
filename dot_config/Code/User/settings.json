@@ -29,7 +29,7 @@
   //   "--warn-unused-ignores",
   //   "--show-error-codes"
   // ],
-  "python.linting.mypyEnabled": true,
+  // "python.linting.mypyEnabled": true,
   "python.linting.pydocstyleArgs": [
     // "--add-ignore=D1" // ignore missing docstrings
   ],
