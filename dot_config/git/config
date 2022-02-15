@@ -1,5 +1,8 @@
 [commit]
 	gpgSign = true
+[core]
+	editor = flatpak run --file-forwarding re.sonny.Commit @@
+	excludesFile = ~/.config/git/ignore
 [init]
 	defaultBranch = main
 [user]
