@@ -1,3 +1,8 @@
+[alias]
+	graph = log --all --oneline --graph
+	ls-skip = !git ls-files -v | grep '^S'
+	skip = update-index --skip-worktree
+	unskip = update-index --no-skip-worktree
 [commit]
 	gpgSign = true
 [core]
