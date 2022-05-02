@@ -3,17 +3,33 @@
   "editor.rulers": [
     80
   ],
-  // "editor.fontFamily": "Cascadia Code PL, Consolas, 'Courier New', monospace",
+  "editor.cursorBlinking": "phase",
+  "editor.cursorSmoothCaretAnimation": true,
+  // "editor.fontFamily": "Comic Code Ligatures, Cascadia Code PL, Consolas, 'Courier New', monospace",
   // "editor.fontLigatures": true,
+  "editor.minimap.renderCharacters": false,
   // "files.autoGuessEncoding": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "telemetry.telemetryLevel": "off",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+
+  "[log]": {
+    "editor.wordWrap": "on"
+  },
+
+  "[properties]": {
+    "files.trimTrailingWhitespace": false
+  },
 
   "git.autofetch": true,
 
+  "python.formatting.blackArgs": [
+    // "--skip-string-normalization"
+  ],
   "python.formatting.provider": "black",
   // "python.linting.mypyArgs": [
   //   // VS Code default
