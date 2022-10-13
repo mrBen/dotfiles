@@ -52,8 +52,8 @@
   ],
   "python.linting.pydocstyleEnabled": true,
   "python.linting.pylintArgs": [
+    // "--disable=C0114,C0115,C0116", // missing-*-docstring
     // black
-    "--disable=C0330,C0326",
     "--max-line-length=88",
     // https://google.github.io/styleguide/pyguide.html
     // "--variable-rgx=^[a-z][a-z0-9_]*$",
@@ -66,3 +66,4 @@
   "xml.server.vmargs": "-Xmx512m",
   "xml.symbols.maxItemsComputed": -1
 }
+  
