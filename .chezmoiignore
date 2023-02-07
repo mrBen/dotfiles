@@ -1,2 +1,15 @@
 LICENSE
 README.md
+
+{{ if ne .chezmoi.os "linux" }}
+.config/git/config
+{{ end }}
+
+{{ if ne .chezmoi.os "windows" }}
+.gitconfig
+{{ end }}
+
+{{ if lower .chezmoi.hostname | hasPrefix "gnb-bcollet" }}
+*
+!.gitconfig
+{{ end }}
