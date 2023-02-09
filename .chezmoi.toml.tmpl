@@ -1,12 +1,13 @@
-[data]
-{{- if lower .chezmoi.hostname | hasPrefix "gnb-bcollet" }}
-    user = "bcollet"
-    email = "bcollet@mathworks.com"
-{{- else }}
-    user = "Benjamin Collet"
-    email = "benjamin.collet@protonmail.ch"
-{{- end }}
-
 encryption = "gpg"
 [gpg]
     recipient = "7083E9A4B92AA5E0"
+
+[data]
+    atWork = {{ lower .chezmoi.hostname | hasPrefix "gnb-bcollet" }}
+{{ if .atWork }}
+    user = "bcollet"
+    email = "bcollet@mathworks.com"
+{{ else }}
+    user = "Benjamin Collet"
+    email = "benjamin.collet@protonmail.ch"
+{{ end }}

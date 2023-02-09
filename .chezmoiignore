@@ -1,15 +1,19 @@
 LICENSE
 README.md
 
+.config/Code  # TODO
+
 {{ if ne .chezmoi.os "linux" }}
+.bashrc.d
 .config/git/config
+settings.sh
 {{ end }}
 
 {{ if ne .chezmoi.os "windows" }}
 .gitconfig
+install.ps1
 {{ end }}
 
-{{ if lower .chezmoi.hostname | hasPrefix "gnb-bcollet" }}
-*
-!.gitconfig
+{{ if .atWork }}
+.ssh
 {{ end }}

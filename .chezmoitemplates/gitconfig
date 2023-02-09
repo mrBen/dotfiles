@@ -1,10 +1,25 @@
+[user]
+	name = {{ .user }}
+	email = {{ .email }}
+
+[init]
+	defaultBranch = main
+
+[core]
+{{ if eq .chezmoi.os "linux" }}
+	editor = flatpak run --file-forwarding re.sonny.Commit @@
+{{ end }}
+	excludesFile = ~/.config/git/ignore
+
+{{ if not .atWork }}
+[user]
+	signingKey = 7083E9A4B92AA5E0
+[commit]
+	gpgSign = true
+{{ end }}
+
 [alias]
 	graph = log --all --oneline --graph
 	ls-skip = !git ls-files -v | grep '^S'
 	skip = update-index --skip-worktree
 	unskip = update-index --no-skip-worktree
-[init]
-	defaultBranch = main
-[user]
-	name = {{ .user }}
-	email = {{ .email }}
