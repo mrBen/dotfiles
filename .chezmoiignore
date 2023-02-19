@@ -15,5 +15,6 @@ install.ps1
 {{ end }}
 
 {{ if .atWork }}
+.bashrc.d/tmdb.sh
 .ssh
 {{ end }}
