@@ -6,6 +6,7 @@ README.md
 {{ if ne .chezmoi.os "linux" }}
 .bashrc.d
 .config/git/config
+.var/
 settings.sh
 {{ end }}
 

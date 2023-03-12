@@ -1,0 +1,23 @@
+{
+    "editor.bracketPairColorization.enabled": false,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "[rust]": {
+        "editor.formatOnSave": true
+    },
+    "window.menuBarVisibility": "toggle",
+    "terminal.integrated.defaultProfile.linux": "toolbox",
+    "terminal.integrated.profiles.linux": {
+        "toolbox": {
+            "path": "/usr/bin/flatpak-spawn",
+            "args": [
+                "--host",
+                "--env=TERM=xterm-256color",
+                "toolbox",
+                "enter"
+            ]
+        }
+    },
+    "git.autofetch": true,
+    "workbench.colorTheme": "Default Light+"
+}
